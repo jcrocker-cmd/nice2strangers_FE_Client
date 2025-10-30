@@ -1,0 +1,173 @@
+.about-section,
+.services-section,
+.newsletter-section,
+.watch-section,
+.shop-body
+{
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+}
+.footer-section {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  background: hsla(47, 81%, 80%, 1);
+
+  background: linear-gradient(
+    270deg,
+    hsla(47, 81%, 80%, 1) 39%,
+    hsla(357, 40%, 71%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    270deg,
+    hsla(47, 81%, 80%, 1) 39%,
+    hsla(357, 40%, 71%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    270deg,
+    hsla(47, 81%, 80%, 1) 39%,
+    hsla(357, 40%, 71%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F5E3A1", endColorstr="#D3989B", GradientType=1 );
+}
+
+.shop-section {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  background: hsla(47, 81%, 80%, 1);
+}
+
+.contact-section {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.preloader-wrapper {
+  transition: opacity 1s ease-out; /* Smooth fade-out transition */
+}
+
+.fade-out {
+  opacity: 0; /* Trigger opacity change */
+}
+
+/* Scroll Up */
+.scrollup {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  height: 60px;
+  width: 60px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  border-radius: 20px;
+  left: 20px;
+  bottom: -60px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  transition: 0.6s;
+  z-index: 2;
+  outline: none;
+}
+
+.scrollup-icon {
+  text-decoration: none;
+  color: white;
+}
+
+.scrollup:hover {
+  transition: 0.5s;
+}
+
+/* Show scroll */
+.show-scroll {
+  bottom: 20px;
+}
+/* About */
+@media (max-width: 1130px) {
+  .about-section {
+    flex-direction: column-reverse;
+  }
+  .about-section .about-left,
+  .about-section .about-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .scrollup {
+    height: 50px;
+    width: 50px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-container .row-1,
+  .services-container .row-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Make sure the icon has transform origin set */
+.pendulum-icon {
+  display: block;
+  transform-origin: top center;
+}
+
+/* Apply animation when hovering the whole card */
+.services-card:hover .pendulum-icon {
+  animation: swing 1s ease-in-out infinite;
+}
+
+/* Define the keyframes */
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(7deg);
+  }
+  80% {
+    transform: rotate(-4deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.services-wrapper:hover .card {
+  transition: all 0.3s ease;
+}
+.services-wrapper .card:hover {
+  filter: none;
+  transform: scale(1.01);
+  z-index: 10;
+}
+
+
+
+
+/* Table */
+/* DataTable.css */
+
+.custom-header {
+  background-color: #1e293b; /* dark blue-gray */
+  color: #000000;            /* light text */
+  font-weight: bold;
+  font-size: 16px;
+}
