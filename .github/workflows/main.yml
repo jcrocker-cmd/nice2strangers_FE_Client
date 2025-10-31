@@ -28,5 +28,5 @@ jobs:
             fi
 
             cd /srv/nice2strangers-frontend-client
-            docker compose down
-            docker compose up -d --build
+            docker compose down --remove-orphans
+            docker compose up -d --build --force-recreate
