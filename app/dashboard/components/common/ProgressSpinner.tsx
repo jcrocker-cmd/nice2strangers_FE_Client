@@ -1,5 +1,5 @@
 import { ProgressSpinner } from "primereact/progressspinner";
-import "../../../assets/css/index.css";
+import "../../../../assets/css/index.css";
 
 export const Spinner = () => {
   return (

@@ -1,6 +1,7 @@
+"use client";
 import { motion } from "framer-motion";
-import { useRouter } from "next/router";
-import Icon from "../../../assets/img/failed-order.png";
+import { useRouter } from "next/navigation";
+import Icon from "../../assets/img/failed-order.png";
 
 const FailedOrder = () => {
   const router = useRouter();
@@ -31,7 +32,7 @@ const FailedOrder = () => {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.97 }}
-          onClick={() => router.push("/shop-page")}
+          onClick={() => router.push("/shop")}
           className="w-full py-3 bg-red-600 text-white font-semibold rounded-xl shadow hover:bg-red-700 transition"
         >
           Try Again

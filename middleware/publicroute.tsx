@@ -1,21 +1,26 @@
-// import React from "react";
-// import { Navigate } from "react-router-dom";
+"use client";
+import React from "react";
+import { useRouter } from "next/navigation";
 
-// interface PublicRouteProps {
-//   children: React.ReactNode;
-//   redirectTo?: string; // default redirect if logged in
-// }
+interface PublicRouteProps {
+  children: React.ReactNode;
+  redirectTo?: string; // default redirect if logged in
+}
 
-// const PublicRoute: React.FC<PublicRouteProps> = ({ children, redirectTo = "/dashboard" }) => {
-//   const token = localStorage.getItem("token"); // check if JWT exists
+const PublicRoute: React.FC<PublicRouteProps> = ({
+  children,
+  redirectTo = "/dashboard",
+}) => {
+  const router = useRouter();
+  const token = localStorage.getItem("token"); // check if JWT exists
 
-//   if (token) {
-//     // logged in, redirect away from login/signup
-//     return <Navigate to={redirectTo} replace />;
-//   }
+  if (token) {
+    router.replace(redirectTo);
+    return;
+  }
 
-//   // not logged in, render the public page
-//   return <>{children}</>;
-// };
+  // not logged in, render the public page
+  return <>{children}</>;
+};
 
-// export default PublicRoute;
+export default PublicRoute;

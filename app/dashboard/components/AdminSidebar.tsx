@@ -1,6 +1,6 @@
 import { Avatar } from "primereact/avatar";
-import "../../assets/css/index.css";
-import logo from "../../assets/img/logo.png";
+import "../../../assets/css/index.css";
+import logo from "../../../assets/img/logo.png";
 import NormalMenu from "./menu/NormalMenu";
 import { getUser } from "../../../constants/user";
 import Image from "next/image";

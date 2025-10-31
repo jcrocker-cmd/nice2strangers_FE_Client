@@ -1,8 +1,11 @@
 import Signup from "../../components/auth/Signup";
+import PublicRoute from "@/middleware/publicroute";
 const Signup_Page = () => {
   return (
     <>
-      <Signup />
+      <PublicRoute>
+        <Signup />
+      </PublicRoute>
     </>
   );
 };

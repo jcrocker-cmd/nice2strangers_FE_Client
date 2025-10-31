@@ -1,9 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./app/**/*.{ts,tsx}", // Next.js app folder
-    "./components/**/*.{ts,tsx}", // All custom components
-    "./src/**/*.{ts,tsx}", // Optional, if you have a src folder
+    "./app/**/*.{ts,tsx,js,jsx}", // scan all files
+    "./components/**/*.{ts,tsx,js,jsx}", // optional if you use components outside app
   ],
   theme: {
     extend: {

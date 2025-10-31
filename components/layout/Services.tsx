@@ -55,7 +55,7 @@ const Services = () => {
               link="/services/software-solutions"
               className="bg-[#CB7346] card"
               icon={card4}
-              title={`Software/\nSolutions`}
+              title={`Software &\nTech\nSolutions`}
               description={`Lorem ipsum\nDolor lorem `}
             ></ServiceCard>
           </div>

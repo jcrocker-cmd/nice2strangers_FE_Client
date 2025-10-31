@@ -20,7 +20,7 @@ import ActionButton from "../common/ActionButton";
 import { ApiRoutes, SWAL } from "../../../../constants/constants";
 import { Spinner } from "../common/ProgressSpinner";
 // import TransactionCards from "../common/TransactionCards";
-import "../../../assets/css/index.css";
+import "../../../../assets/css/index.css";
 // import ProductsContent from "../modal_content/products/ProductsContent";
 // import ProductsContentEdit from "../modal_content/products/ProductsContentEdit";
 // import ProductsContentView from "../modal_content/products/ProductsContentView";
