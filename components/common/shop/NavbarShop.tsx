@@ -109,7 +109,7 @@ const Navbar = () => {
             </li>
             <li className="relative flex items-center">
               <Link
-                href="/client-dashboard"
+                href="/dashboard"
                 className="hover:text-yellow-500 transition flex items-center relative"
               >
                 <HiOutlineShoppingCart className="text-2xl" />
@@ -155,7 +155,7 @@ const Navbar = () => {
               Contact
             </Link>
             <Link
-              href="/shop-page"
+              href="/shop"
               className="flex items-center gap-2 hover:text-yellow-500"
             >
               <HiOutlineShoppingCart /> Shop

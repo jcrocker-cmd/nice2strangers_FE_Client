@@ -46,7 +46,7 @@ const Login = () => {
       if (role === Roles.ADMIN) {
         router.push("/dashboard");
       } else if (role === Roles.USER) {
-        router.push("/shop-page");
+        router.push("/shop");
       } else {
         router.push("/");
       }

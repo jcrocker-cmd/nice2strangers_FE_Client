@@ -12,7 +12,7 @@ const NavbarMobile = ({ toggleMenu }: NavbarMobileMenuProps) => {
       <div className="fullscreen-menu">
         <Link href="/">
           {" "}
-          <Image src={logo} alt="logo" className="w-[100px]" />
+          <Image src={logo} alt="logo" className="w-[100px] h-[100px]" />
         </Link>
         <button className="close-button" onClick={toggleMenu}>
           ✕

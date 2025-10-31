@@ -1,8 +1,11 @@
 import Login from "../../components/auth/Login";
+import PublicRoute from "@/middleware/publicroute";
 const Login_Page = () => {
   return (
     <>
-      <Login />
+      <PublicRoute>
+        <Login />
+      </PublicRoute>
     </>
   );
 };

@@ -9,7 +9,10 @@ const VideoEditingPage = () => {
     <div className="font-grotesk">
       <Navbar />
       <div className="mt-20 md:mt-16 sm:mt-12">
-        <ServiceHeader title="Software Solutions" image={VideoHeaderImg} />
+        <ServiceHeader
+          title="Software & Tech Solutions"
+          image={VideoHeaderImg}
+        />
       </div>
 
       {/* Description */}

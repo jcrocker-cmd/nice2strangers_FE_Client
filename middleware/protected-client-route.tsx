@@ -1,26 +1,31 @@
-// import React from "react";
-// import { Navigate } from "react-router-dom";
+"use client";
+import React from "react";
+import { useRouter } from "next/navigation";
+interface ProtectedRouteProps {
+  children: React.ReactNode;
+  role: string;
+}
 
-// interface ProtectedRouteProps {
-//   children: React.ReactNode;
-//   role: string;
-// }
+const ClientProtectedRoute: React.FC<ProtectedRouteProps> = ({
+  children,
+  role,
+}) => {
+  const router = useRouter();
+  const token = localStorage.getItem("token"); // check if JWT exists
+  const userRole = localStorage.getItem("role");
 
-// const ClientProtectedRoute: React.FC<ProtectedRouteProps> = ({ children, role }) => {
-//   const token = localStorage.getItem("token"); // check if JWT exists
-//   const userRole = localStorage.getItem("role");
+  if (!token) {
+    // not logged in, redirect to login
+    router.replace("/login");
+    return;
+  }
 
-//   if (!token) {
-//     // not logged in, redirect to login
-//     return <Navigate to="/login" replace />;
-//   }
+  if (role && userRole !== role) {
+    router.replace("/dashboard");
+  }
 
-//     if (role && userRole !== role) {
-//     return <Navigate to="/dashboard" replace />;
-//   }
+  // logged in, render the protected component
+  return <>{children}</>;
+};
 
-//   // logged in, render the protected component
-//   return <>{children}</>;
-// };
-
-// export default ClientProtectedRoute;
+export default ClientProtectedRoute;
