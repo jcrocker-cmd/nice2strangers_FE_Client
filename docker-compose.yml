@@ -1,11 +1,10 @@
+version: "3.8"
 services:
   nextjs-app:
     build:
       context: .
       dockerfile: Dockerfile
     container_name: nice2strangers-frontend-client
-    expose:
-      - "3000" # internal port only
     networks:
       - proxy
 
