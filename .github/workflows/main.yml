@@ -21,7 +21,7 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
             if [ ! -d "/srv/nice2strangers-frontend-client/.git" ]; then
-              git clone https://github.com/jcrocker-cmd/nice2strangers_FE_Client.git
+              git clone https://github.com/jcrocker-cmd/nice2strangers_FE_Client.git /srv/nice2strangers-frontend-client
             else
               cd /srv/nice2strangers-frontend-client
               git pull origin main
