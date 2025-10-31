@@ -1,27 +1,14 @@
-version: "3.8"
 services:
-  next-app:
+  nextjs-app:
     build:
       context: .
       dockerfile: Dockerfile
     container_name: nice2strangers-frontend-client
-    restart: unless-stopped
+    expose:
+      - "3000" # internal port only
     networks:
       - proxy
 
 networks:
   proxy:
     external: true
-# version: "3.8"
-
-# services:
-#   nextjs-app:
-#     build:
-#       context: .
-#       dockerfile: Dockerfile
-#     container_name: nice2strangers-frontend
-#     ports:
-#       - "3000:3000" # map local port for testing
-#     environment:
-#       - NEXT_PUBLIC_API_URL=http://localhost:7095/api # your local API
-#     restart: unless-stopped
