@@ -1,5 +1,6 @@
 import React from "react";
 import { Minus, Plus, Trash2 } from "lucide-react";
+import Image from "next/image";
 
 interface CartItem {
   id: number;
@@ -39,7 +40,7 @@ const Cart: React.FC<CartProps> = ({ items, onUpdateQuantity, onRemove }) => {
               >
                 {/* Product Info */}
                 <div className="flex items-center gap-4">
-                  <img
+                  <Image
                     src={item.image}
                     alt={item.name}
                     className="w-16 h-16 rounded-lg object-cover"

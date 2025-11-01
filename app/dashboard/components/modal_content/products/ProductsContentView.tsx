@@ -1,6 +1,7 @@
 "use client";
 import CustomButton from "../../common/CustomModalButton";
 import { ApiRoutes } from "../../../../../constants/constants";
+import Image from "next/image";
 
 interface Product {
   id: string;
@@ -69,7 +70,7 @@ const ProductsContentView = ({
 
         {/* Image */}
         <div className="bg-gray-50 px-4 py-3 rounded-lg shadow-sm flex justify-center">
-          <img
+          <Image
             src={`${ApiRoutes.baseUrl}/${product.image}`}
             alt={product.productName}
             className="rounded-xl w-48 h-48 object-cover shadow-md"
