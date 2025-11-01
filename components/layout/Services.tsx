@@ -68,9 +68,12 @@ const Services = () => {
           <h1 className="mb-4 md:text-2xl sm:text-base">
             Ready to elevate your business?
           </h1>
-          <button className="bg-[#E1A451] cursor-pointer text-white font-bold text-sm py-2 px-4 rounded w-fit hover:bg-[#c8954e]">
-            <Link href="/services">LEARN MORE</Link>
-          </button>
+          <Link
+            href="/services"
+            className="bg-[#E1A451] cursor-pointer text-white font-bold text-sm py-2 px-4 rounded w-fit hover:bg-[#c8954e]"
+          >
+            Explore Our Services
+          </Link>
         </div>
       </Section>
     </Wrapper>
