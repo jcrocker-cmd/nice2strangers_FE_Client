@@ -24,7 +24,7 @@ const slides: Slide[] = [
     alt: "Slide 1",
     heading: "Capture stunning aerial views with our drones",
     buttonText: "GET A QUOTE",
-    link: "/drone-services",
+    link: "/services/drone-services",
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ const slides: Slide[] = [
     alt: "Slide 2",
     heading: "Turning creativity into impact across social platforms.",
     buttonText: "DISCOVER",
-    link: "/social-media-creation",
+    link: "/services/social-media-creation",
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ const slides: Slide[] = [
     alt: "Slide 3",
     heading: "Turning raw clips into stories that connect.",
     buttonText: "GET STARTED",
-    link: "/video-editing",
+    link: "/services/video-editing",
   },
 ];
 
@@ -87,7 +87,7 @@ const CustomCarousel: React.FC = () => {
                 </h2>
                 {slide.buttonText && (
                   <Link href={slide.link || "#"}>
-                    <button className="bg-[#E1A451] text-white font-bold text-lg sm:text-xl md:text-xl py-3 px-8 md:py-4 md:px-10 rounded hover:bg-[#c8954e]">
+                    <button className="bg-[#E1A451] text-white font-bold text-lg sm:text-xl md:text-xl py-3 px-8 md:py-4 md:px-10 rounded hover:bg-[#c8954e] cursor-pointer">
                       {slide.buttonText}
                     </button>
                   </Link>

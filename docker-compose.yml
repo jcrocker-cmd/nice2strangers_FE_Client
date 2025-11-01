@@ -1,30 +1,17 @@
 version: "3.8"
 services:
-  nextjs-app:
+  next-app:
     build:
       context: .
       dockerfile: Dockerfile
     container_name: nice2strangers-frontend-client
+    restart: unless-stopped
     networks:
       - proxy
 
 networks:
   proxy:
     external: true
-# version: "3.8"
-# services:
-#   next-app:
-#     build:
-#       context: .
-#       dockerfile: Dockerfile
-#     container_name: nice2strangers-frontend-client
-#     restart: unless-stopped
-#     networks:
-#       - proxy
-
-# networks:
-#   proxy:
-#     external: true
 # version: "3.8"
 
 # services:

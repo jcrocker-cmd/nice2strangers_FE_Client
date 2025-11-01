@@ -39,7 +39,7 @@ export const useScrollRevealFooter = () => {
     import("scrollreveal").then((ScrollReveal) => {
       ScrollReveal.default().reveal(".footer-section", {
         delay: 400,
-        duration: 2000,
+        duration: 1200,
         distance: "50px",
         origin: "bottom",
       });
@@ -52,13 +52,13 @@ export const useScrollRevealAbout = () => {
     import("scrollreveal").then((ScrollReveal) => {
       ScrollReveal.default().reveal(".about-left", {
         delay: 400,
-        duration: 2000,
+        duration: 1200,
         distance: "50px",
         origin: "top",
       });
       ScrollReveal.default().reveal(".about-right", {
         delay: 400,
-        duration: 2000,
+        duration: 1200,
         distance: "50px",
         origin: "bottom",
       });
@@ -71,7 +71,7 @@ export const useScrollRevealContact = () => {
     import("scrollreveal").then((ScrollReveal) => {
       ScrollReveal.default().reveal(".contact-container", {
         delay: 400,
-        duration: 2000,
+        duration: 1200,
         distance: "50px",
         origin: "bottom",
       });
