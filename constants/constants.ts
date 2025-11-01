@@ -1,6 +1,8 @@
 export class ApiRoutes {
-  static readonly baseUrlApi = process.env.NEXT_PUBLIC_BASE_URL_API;
-  static readonly baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  // static readonly baseUrlApi = process.env.NEXT_PUBLIC_BASE_URL_API;
+  // static readonly baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+    static readonly baseUrlApi = "https://api.nice2strangers.org/api";
+  static readonly baseUrl = "https://api.nice2strangers.org/";
   // static readonly baseUrlApi = "https://localhost:7095/api";
   // static readonly baseUrl = "https://localhost:7095";
 
