@@ -88,7 +88,7 @@ function Navbar() {
         </button>
 
         <div className="navbar-logo">
-          <Image src={logo} alt="Logo" />
+          <Image src={logo} alt="Logo" className="h-16 w-auto" />
         </div>
       </nav>
 

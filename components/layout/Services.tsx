@@ -1,3 +1,5 @@
+"use client";
+
 import Wrapper from "../common/Wrapper";
 import Section from "../common/Section";
 import "../../assets/css/main.css";
@@ -7,6 +9,7 @@ import card2 from "../../assets/img/s-icon-2.png";
 import card3 from "../../assets/img/s-icon-3.png";
 import card4 from "../../assets/img/s-icon-4.png";
 import ServiceCard from "../common/ServicesCard";
+import Link from "next/link";
 import DroneServiceCard from "../common/ServiceCardDrone";
 import { useScrollRevealServices } from "@/hooks/useScrollReveal";
 
@@ -66,7 +69,7 @@ const Services = () => {
             Ready to elevate your business?
           </h1>
           <button className="bg-[#E1A451] cursor-pointer text-white font-bold text-sm py-2 px-4 rounded w-fit hover:bg-[#c8954e]">
-            LEARN MORE
+            <Link href="/services">LEARN MORE</Link>
           </button>
         </div>
       </Section>

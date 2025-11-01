@@ -6,6 +6,7 @@ import type { Stripe } from "@stripe/stripe-js";
 import { stripePromise } from "../../../../lib/stripe";
 import axios from "axios";
 import { getUser } from "../../../../constants/user";
+import Image from "next/image";
 
 const userId = getUser()?.userId || "";
 
@@ -143,7 +144,7 @@ const Cart: React.FC = () => {
                     onChange={() => toggleCheck(item.id)}
                     className="w-4 h-4 accent-primary"
                   />
-                  <img
+                  <Image
                     src={`${ApiRoutes.baseUrl}${item.image}`}
                     alt={item.productName}
                     className="w-20 h-20 rounded-lg object-cover border"

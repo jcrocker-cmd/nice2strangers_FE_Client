@@ -98,6 +98,7 @@ const DroneInquiryForm: React.FC = () => {
             <option value="Event">Event Coverage</option>
             <option value="Construction">Construction Site Monitoring</option>
             <option value="Cinematic">Cinematic Production</option>
+            <option value="Wedding Events">Wedding Events</option>
             <option value="Survey">Survey & Mapping</option>
             <option value="Other">Other</option>
           </select>
